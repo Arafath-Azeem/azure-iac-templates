@@ -52,5 +52,5 @@ All templates and assets in this repository should align with the following prin
 ## Getting Started
 1. Clone the repository:
    ```bash
-   git clone
+   git clone https://github.com/Arafath-Azeem/azure-iac-templates.git
 
