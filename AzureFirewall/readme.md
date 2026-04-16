@@ -16,30 +16,9 @@ The Secure Cloud Architecture follows a **Hub-and-Spoke model** where the Azure 
 ---
 ## Prerequisite 
 
-Create a Vnet and Subnet for Firewall. Creation of Virtual network must be through IP Pools (Azure Policy in place that will block creation of Virtual Network by providing the IP address explicitly) 
-- Use IP pools to assign IP address for VNET and Subnet 
+Create a Virtual Network (VNET) and a dedicated Subnet for Firewall
 
 [Learn More about IP pools](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-manage-ip-addresses-network-manager?tabs=armtemplate)
-
-## Create VNET for Firewall using IP Pool 
-
-<span style="color:red; font-weight:bold;">NOTE:</span><br>
-
-- A custom policy is implemnted in Azure for Virtual networks to use IP Pool during VNET creation. A VNET creation will will fail if a user explicitly input ip address space. All VNET must use IP pool that helps to better manage ip addresses 
-- This policy is currently tested in PPE and will be rolled out in PROD envirtonmnets in the future. 
-
-### Create a VNET using IP Pool 
-
-
-![azfw1.png](/AzFirewall/attachments/azfw1.png)
-
-- Navigate to IP Addressess and - Select the IP pool 
-
-![azfw2.png](/AzFirewall/attachments/azfw2.png)
-
-- Select the address space as required. For Example: /24 or /25 or /26 
-
-![azfw3.png](/AzFirewall/attachments/azfw3.png)
 
 ## What Gets Deployed ?
 
