@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "azureFirewallName": {
+      "value": "azseappeamefw01"
+    },
+    "location": {
+      "value": "southeastasia"
+    },
+    "azureFirewallSku": {
+      "value": "Premium"
+    },
+    "vnetName": {
+      "value": "az-sea-ppe-ame-azfw-hub-vnet01"
+    },
+    "vnetResourceGroup": {
+      "value": "az-sea-ppe-ame-azfw-hub-rg"
+    },
+    "ipConfigName": {
+      "value": "seafw-ipconfig"
+    },
+    "publicIPName": {
+      "value": "az-sea-ppe-fw-pip01"
+    },
+    "tags": {
+      "value": {
+        "Environment": "NonProduction",
+        "Envionment": "PPE"
+      }
+    }
+  }
+}
