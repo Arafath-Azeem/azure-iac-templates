@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "keyVaultName": {
+      "value": "kv-s360-secure-001"
+    },
+    "location": {
+      "value": "australiasoutheast"
+    },
+    "skuName": {
+      "value": "standard"
+    },
+    "enableRbacAuthorization": {
+      "value": true
+    },
+    "softDeleteRetentionInDays": {
+      "value": 90
+    },
+    "enablePurgeProtection": {
+      "value": true
+    },
+    "tags": {
+      "value": {
+        "env": "prod",
+        "owner": "security-engineering"
+      }
+    }
+  }
+}
